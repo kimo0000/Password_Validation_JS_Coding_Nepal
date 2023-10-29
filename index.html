@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validation JS Coding Nepal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inp_fild">
+        <input
+          class="password"
+          type="password"
+          maxlength="15"
+          placeholder="Enter your password"
+        />
+        <i class="fa-solid fa-eye"></i>
+      </div>
+      <div class="content">
+        <h3>Password Should Be :</h3>
+        <ul class="liste_item">
+          <li class="item">
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 8 characters long</span>
+          </li>
+          <li class="item">
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 number (0...9)</span>
+          </li>
+          <li class="item">
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 lowercase letters (a...z)</span>
+          </li>
+          <li class="item">
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 special symbol (!...$)</span>
+          </li>
+          <li class="item">
+            <i class="fa-solid fa-circle"></i>
+            <span>At least 1 uppercase letter (a...z)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d575fe1d69.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </body>
+</html>

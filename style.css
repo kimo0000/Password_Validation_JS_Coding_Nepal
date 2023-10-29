@@ -1,0 +1,90 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left top, #145785, #5472);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  width: 350px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 15px;
+}
+
+.inp_fild {
+  position: relative;
+}
+
+.inp_fild input {
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.inp_fild i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.liste_item {
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: calc(100% / 6);
+  gap: 6px;
+}
+
+.liste_item .item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.liste_item .item.valid i {
+  font-size: 1rem;
+}
+
+.liste_item .item.valid span {
+  color: #000;
+  font-size: 1rem;
+}
+
+.item i {
+  color: #777;
+  font-size: 0.5rem;
+}
+
+.item span {
+  color: #777;
+}
